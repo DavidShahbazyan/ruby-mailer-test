@@ -9,8 +9,28 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-address_from: 'ruby.rails@inbox.ru'
-smtp_server: 'smtp.mail.ru'
-smtp_port: '465'
-mail_username: 'ruby.rails@inbox.ru'
-mail_password: 'qwe123asd'
+development:
+  mail_from_address: 'ruby.rails@inbox.ru'
+  address: 'smtp.mail.ru'
+  port: '465'
+  domain: 'mail.ru'
+  authentication: 'plain'
+  enable_starttls_auto: 'true'
+  user_name: 'ruby.rails@inbox.ru'
+  password: 'qwe123asd'
+  ssl: 'true'
+  tls: 'true'
+
+test:
+
+production:
+  mail_from_address: ''
+  address: ''
+  port: ''
+  domain: ''
+  authentication: 'plain'
+  enable_starttls_auto: 'true'
+  user_name: ''
+  password: ''
+  ssl: 'true'
+  tls: 'true'
